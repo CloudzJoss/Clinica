@@ -1,0 +1,126 @@
+* {
+    font-family: Arial;
+
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.Encabezado {
+    padding: 0.5em 3em;
+    background-color: #f5f7fc;
+}
+
+.Encabezado nav {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.Encabezado .logo-name {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+
+    padding-right: 1.5em;
+}
+
+.Encabezado .icon {
+    width: 50px;
+    height: 50px;
+}
+
+.Encabezado a {
+    text-decoration: none;
+
+    color: #000000;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+.Fondo {
+    position: relative;
+    width: 100%;
+    height: 40em; 
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Fondo img{
+    width: 100%;
+    height: 40em;
+
+    position: absolute;
+
+    display: block;
+}
+
+.Fondo .contenido-fondo {
+    position: relative;
+    text-align: center;
+    color: black;
+
+    padding-bottom: 4em;
+}
+
+.Fondo h1, .Fondo p, .Fondo button {
+    position: relative;
+}
+
+.Fondo h1 {
+    font-size: 2.5em;
+    color: rgba(18, 63, 100, 0.8);
+}
+
+.Fondo p {
+    margin-bottom: 15px;
+
+    font-size: 0.9em;
+        color: rgba(10, 89, 141, 0.8);
+}
+
+.Fondo button {
+    padding: 10px 20px;
+    background-color: rgba(26, 100, 170, 0.5);
+    border: 0;
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    color: #f5f7fc;
+    cursor: pointer;
+}
+
+.Contenido {
+    background-color: #f5f7fc;
+    flex-grow: 1;   
+    
+    margin: 0;
+    padding: 2em 3em;
+}
+
+.Contenido .info {
+    text-align: center;
+    max-width: 6 00px;
+    margin: 0 auto;
+
+    max-width: 45em;
+}
+
+.Contenido .info h2 {
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+
+.Contenido .info p {
+    font-size: 1em;
+    line-height: 1.2em;
+}
