@@ -9,12 +9,17 @@ on:
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend/app
     steps:
-      - uses: actions/checkout@v4
-      - run: npm ci && npm run build
+      - uses: actions/checkout@v3
+      - run: npm ci
+      - run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_HOSPEDAJE_REACT_CLINICA }}
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_CLINICA }}"
           channelId: live
           projectId: hospedaje-react-clinica
+
